@@ -1,12 +1,56 @@
-.order-popup {
-  background-color: #fff;
-  border: 1px solid #aaa;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1d;
+  color: #f5f5f5;
+  margin: 0;
   padding: 20px;
-  margin-top: 20px;
+}
+
+h1, h2, h3 {
+  color: #00adb5;
+}
+
+input, button {
+  padding: 10px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  background-color: #00adb5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007b8a;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.order-popup {
+  background-color: #222831;
   border-radius: 8px;
-  width: 90%;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  z-index: 1000;
+}
+
+.order-tabs {
+  margin: 10px 0;
 }
 
 .order-table {
@@ -15,32 +59,55 @@
   margin-top: 10px;
 }
 
-.order-table th,
-.order-table td {
-  border: 1px solid #ccc;
+.order-table th, .order-table td {
   padding: 10px;
-  text-align: center;
+  border-bottom: 1px solid #393e46;
+  text-align: left;
 }
 
 .order-table th {
-  background-color: #f2f2f2;
+  background-color: #393e46;
 }
 
-.order-tabs {
-  margin-top: 15px;
-  margin-bottom: 10px;
+.order-table td {
+  background-color: #2e2e2e;
+}
+/* Improve input styling */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #393e46;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 220px;
+  background-color: #2e2e2e;
+  color: #f5f5f5;
 }
 
-.order-tabs button {
-  margin-right: 10px;
-  padding: 8px 12px;
-  border: none;
-  background-color: #1976d2;
+/* Improve button styling */
+button {
+  padding: 10px 16px;
+  background-color: #00adb5;
   color: white;
-  border-radius: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
-.order-tabs button:hover {
-  background-color: #145a9e;
+button:hover {
+  background-color: #007b8a;
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #00adb5;
+  margin-top: 0;
 }
